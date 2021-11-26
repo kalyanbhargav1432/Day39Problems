@@ -1,11 +1,11 @@
 function getSecondMax(array){
-    var max = Math.max.apply(null, array);
+    let max = Math.max.apply(null, array);
     array.splice(array.indexOf(max), 1);
     return Math.max.apply(null, array);
 }
 
 function getSecondMin(array){
-    var minimum = Math.min.apply(null, array);
+    let minimum = Math.min.apply(null, array);
     array.splice(array.indexOf(minimum), 1);
     return Math.min.apply(null, array)
 }
